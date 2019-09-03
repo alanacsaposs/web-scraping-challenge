@@ -22,9 +22,8 @@ def home():
 def web_scrape():
     db.collection.remove({})
     mars_data = scrape_mars.scrape()
-    db.collection.insert_one(mars_data)
-    return 'Scraped Data'  
-    #render_template('scrape.html')
+    db.collection.insert_one(mars_data)  
+    return render_template("index.html", mars_data = mars_data)
 
 
 if __name__ == "__main__":
