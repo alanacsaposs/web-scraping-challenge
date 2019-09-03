@@ -4,9 +4,13 @@ A web application that scrapes various websites for data related to the Mission 
 
 App sources information from:
 [NASA Mars News Site](https://mars.nasa.gov/news/)
+
 [JPL Featured Space Image](https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars)
+
 [Mars Weather Twitter Account](https://twitter.com/marswxreport?lang=en)
+
 [Mars Facts Webpage](https://space-facts.com/mars/)
+
 [USGS Astrogeology Site](https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars)
 
 Final app includes two pages, an index and a scrape page. The scrape page runs the web scrape function, and acts as the final landing page for all data and includes a "Scrape Again" button to re-scrape information.
