@@ -3,6 +3,7 @@
 A web application that scrapes various websites for data related to the Mission to Mars and displays the information in an HTML page.
 
 App sources information from:
+
 [NASA Mars News Site](https://mars.nasa.gov/news/)
 
 [JPL Featured Space Image](https://www.jpl.nasa.gov/spaceimages/?search=&category=Mars)
