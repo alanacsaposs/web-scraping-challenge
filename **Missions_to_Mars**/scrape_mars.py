@@ -142,10 +142,13 @@ def scrape():
             html_hem_img = browser.html
             # Parse HTML with Beautiful Soup
             soup_hem_img = BeautifulSoup(html_hem_img, 'html.parser')
+
+
+            # Retrieve all elements that contain image title info
+            title_info = soup_hem_img.find('section', class_='block metadata')
+            title = title_info.find('h2', class_= 'title').text
             # Retrieve all elements that contain image info
-            img_info = soup_hem_img.find('section', class_='block metadata')
-    
-            title = img_info.find('h2', class_= 'title').text
+            img_info = soup_hem_img.find('div', class_='downloads')
             img_a_href = img_info.find('a')
             img_url = img_a_href.get('href')
             hem_image_urls.append({"title" : title, "img_url" : img_url})
